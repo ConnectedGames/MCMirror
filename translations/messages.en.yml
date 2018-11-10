@@ -1,3 +1,4 @@
+'File Download': '__File Download'
 Filters: __Filters
 'Archive of %applicationName% Builds': '__Archive of %applicationName% Builds'
 'Official Links': '__Official Links'
@@ -6,3 +7,26 @@ Version: __Version
 Size: __Size
 Date: __Date
 Download: __Download
+Abandoned: __Abandoned
+External: __External
+'Outgoing link to an external download location.': '__Outgoing link to an external download location.'
+'Project was abandoned by its developers.': '__Project was abandoned by its developers.'
+Recommended: __Recommended
+'continuation of Yives Mirror': '__continuation of Yives Mirror'
+'Minecraft Server Software File Mirror': '__Minecraft Server Software File Mirror'
+Home: __Home
+Downloads: __Downloads
+APIs: __APIs
+Discord: __Discord
+GitHub: __GitHub
+'%websiteName% is not affliated with Mojang nor any of the software hosted here.': '__%websiteName% is not affliated with Mojang nor any of the software hosted here.'
+List: __List
+All: __All
+Format: __Format
+'Example URL': '__Example URL'
+Info: __Info
+'This URL is just for listing the current options.': '__This URL is just for listing the current options.'
+'Example usage': '__Example usage'
+'Real world usage for grabbing the list of files for %applicationName%.': '__Real world usage for grabbing the list of files for %applicationName%.'
+File: __File
+'Real world usage for requesting information about %buildName%.': '__Real world usage for requesting information about %buildName%.'
