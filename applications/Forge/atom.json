@@ -11,6 +11,5 @@
         "\/.*(server).*\/"
     ],
     "versionGroupOverride": {
-        "Legacy": "REGEX"
     }
 }
