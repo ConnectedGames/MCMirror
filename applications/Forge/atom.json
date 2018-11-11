@@ -2,8 +2,8 @@
     "recommended": true,
     "abandoned": false,
     "external": true,
-    "url": https://gitlab.com/AtomMC/Atom,
-    "name": "Atom",-
+    "url": "https://gitlab.com/AtomMC/Atom",
+    "name": "Atom",
     "category": "Other",
     "officialLinks": {},
     "versionRegex": [
