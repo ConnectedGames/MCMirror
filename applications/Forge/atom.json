@@ -1,0 +1,15 @@
+{
+    "recommended": true,
+    "abandoned": false,
+    "external": true,
+    "url": "https://gitlab.com/AtomMC/Atom",
+    "name": "Atom",
+    "category": "Other",
+    "officialLinks": {},
+    "versionRegex": [
+        "\/[a-zA-Z]+-([0-9.]+).*\/",
+        "\/.*(server).*\/"
+    ],
+    "versionGroupOverride": {
+    }
+}

@@ -4,24 +4,24 @@
     <div class="column is-12">
         <div class="card">
             <header class="card-header">
-                <p class="card-header-title">APIs</p>
+                <p class="card-header-title">{% trans %}APIs{% endtrans %}</p>
             </header>
             <div class="card-content">
                 <div class="content">
-                    <h3>List - All</h3>
-                    <p><strong>Format:</strong> https://{{ app.request.host }}/api/list/{option}</p>
-                    <p><strong>Example URL:</strong> <a href="https://{{ app.request.host }}/api/list/all">https://{{ app.request.host }}/api/list/all</a></p>
-                    <p><strong>Info:</strong> This URL is just for listing the current options.</p>
+                    <h3>{% trans %}List{% endtrans %} - {% trans %}All{% endtrans %}</h3>
+                    <p><strong>{% trans %}Format{% endtrans %}:</strong> https://{{ app.request.host }}/api/list/{option}</p>
+                    <p><strong>{% trans %}Example URL{% endtrans %}:</strong> <a href="https://{{ app.request.host }}/api/list/all">https://{{ app.request.host }}/api/list/all</a></p>
+                    <p><strong>{% trans %}Info{% endtrans %}:</strong> {% trans %}This URL is just for listing the current options.{% endtrans %}</p>
                     <pre>[
 {% for application in allApplications %}
   "{{ application.name }}"{% if not loop.last %},{% endif %}
 
 {% endfor %}
 ]</pre>
-                    <h3>List - Example usage</h3>
-                    <p><strong>Format:</strong> https://{{ app.request.host }}/api/list/{option}</p>
-                    <p><strong>Example URL:</strong> <a href="https://{{ app.request.host }}/api/list/mcpc">https://{{ app.request.host }}/api/list/mcpc</a></p>
-                    <p><strong>Info:</strong> Real world usage for grabbing the list of files for MCPC+.</p>
+                    <h3>{% trans %}List{% endtrans %} - {% trans %}Example usage{% endtrans %}</h3>
+                    <p><strong>{% trans %}Format{% endtrans %}:</strong> https://{{ app.request.host }}/api/list/{option}</p>
+                    <p><strong>{% trans %}Example URL{% endtrans %}:</strong> <a href="https://{{ app.request.host }}/api/list/mcpc">https://{{ app.request.host }}/api/list/mcpc</a></p>
+                    <p><strong>{% trans %}Info{% endtrans %}:</strong> {% trans with {'%applicationName%': 'MCPC+'} %}Real world usage for grabbing the list of files for %applicationName%.{% endtrans %}</p>
                     <pre>[
   "mcpc-plus-1.6.4-R2.1-forge965-B243.jar",
   "mcpc-plus-1.6.4-R2.1-forge965-B251.jar",
@@ -34,10 +34,10 @@
   "mcpc-plus-1.4.7-R1.1-SNAPSHOT-f534-247.jar",
   "craftbukkitplusplus-1.2.5-R4.1-MCPC-SNAPSHOT.jar"
 ]</pre>
-                    <h3>File - Example Usage</h3>
-                    <p><strong>Format:</strong> https://{{ app.request.host }}/api/file/{option}/{filename}
-                    <p><strong>Example URL:</strong> <a href="https://{{ app.request.host }}/api/file/spigot/spigot-1.13-R0.1-SNAPSHOT-b1795.jar">https://{{ app.request.host }}/api/file/spigot/spigot-1.13-R0.1-SNAPSHOT-b1795.jar</a></p>
-                    <p><strong>Info:</strong> Real world usage for requesting information about spigot-1.13-R0.1-SNAPSHOT-b1795.jar.</p>
+                    <h3>{% trans %}File{% endtrans %} - {% trans %}Example usage{% endtrans %}</h3>
+                    <p><strong>{% trans %}Format{% endtrans %}:</strong> https://{{ app.request.host }}/api/file/{option}/{filename}
+                    <p><strong>{% trans %}Example URL{% endtrans %}:</strong> <a href="https://{{ app.request.host }}/api/file/spigot/spigot-1.13-R0.1-SNAPSHOT-b1795.jar">https://{{ app.request.host }}/api/file/spigot/spigot-1.13-R0.1-SNAPSHOT-b1795.jar</a></p>
+                    <p><strong>{% trans %}Info{% endtrans %}:</strong> {% trans with {'%buildName%': 'spigot-1.13-R0.1-SNAPSHOT-b1795.jar'} %}Real world usage for requesting information about %buildName%.{% endtrans %}</p>
                     <pre>{
   "size_human": "43 MB",
   "size_bytes": 45864727,

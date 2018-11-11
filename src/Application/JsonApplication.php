@@ -21,22 +21,22 @@ class JsonApplication implements ApplicationInterface
 
     public function isRecommended(): bool
     {
-        return $this->jsonData['recommended'];
+        return $this->jsonData['recommended'] ?? false;
     }
 
     public function isAbandoned(): bool
     {
-        return $this->jsonData['abandoned'];
+        return $this->jsonData['abandoned'] ?? true;
     }
 
     public function isExternal(): bool
     {
-        return $this->jsonData['external'];
+        return $this->jsonData['external'] ?? $this->getUrl() !== null;
     }
 
     public function getUrl(): ?string
     {
-        return $this->jsonData['url'];
+        return $this->jsonData['url'] ?? null;
     }
 
     public function getName(): string
@@ -46,12 +46,12 @@ class JsonApplication implements ApplicationInterface
 
     public function getCategory(): string
     {
-        return $this->jsonData['category'];
+        return $this->jsonData['category'] ?? 'Other';
     }
 
     public function getOfficialLinks(): array
     {
-        return $this->jsonData['officialLinks'];
+        return $this->jsonData['officialLinks'] ?? [];
     }
 
     /**
@@ -60,5 +60,10 @@ class JsonApplication implements ApplicationInterface
     public function getVersionRegex()
     {
         return $this->jsonData['versionRegex'];
+    }
+
+    public function getVersionGroupOverride(): array
+    {
+        return $this->jsonData['versionGroupOverride'] ?? [];
     }
 }

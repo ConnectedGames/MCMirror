@@ -24,7 +24,7 @@ class DownloadsController extends AbstractController
      * DownloadsController constructor.
      *
      * @param ApplicationService $applicationService
-     * @param BuildsService      $buildsService
+     * @param BuildsService $buildsService
      */
     public function __construct(ApplicationService $applicationService, BuildsService $buildsService)
     {
@@ -57,12 +57,29 @@ class DownloadsController extends AbstractController
 
         $builds = $this->buildsService->getBuildsForApplication($application);
 
+        usort($builds, function ($a, $b) {
+            return strnatcmp($b['version'], $a['version']);
+        });
+
+        foreach ($builds as &$build) {
+            foreach ($application->getVersionGroupOverride() as $group => $regex) {
+                if (preg_match($regex, $build['fileName']) === 1) {
+                    $build['version'] = $group;
+                    break;
+                }
+            }
+        }
+
         $versions = array_unique(array_map(function ($build) {
             return $build['version'];
         }, $builds));
 
+        usort($versions, function ($a, $b) {
+            return strnatcmp($b, $a);
+        });
+
         return $this->render('downloads/index.html.twig', [
-            'title' => $application->getName().' Downloads',
+            'title' => $application->getName() . ' Downloads',
             'application' => $application,
             'officialLinks' => $application->getOfficialLinks(),
             'versions' => $versions,

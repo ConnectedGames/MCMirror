@@ -1,0 +1,32 @@
+'File Download': 'Download file'
+Filters: Filtri
+'Archive of %applicationName% Builds': 'Archivio delle Builds di %applicationName%'
+'Official Links': 'Link ufficiali'
+Name: Nome
+Version: Versione
+Size: Dimensione
+Date: Data
+Download: __Download
+Abandoned: Abbandonato
+External: Esterno
+'Outgoing link to an external download location.': 'Link ad un download esterno.'
+'Project was abandoned by its developers.': 'Il progetto è stato abbandonato dal suo sviluppatore.'
+Recommended: Raccomandato
+'continuation of Yives Mirror': 'Successore di Yives Mirror'
+'Minecraft Server Software File Mirror': 'Mirror per i Sofwtare Server di Minecraft'
+Home: __Home
+Downloads: __Downloads
+APIs: __APIs
+Discord: __Discord
+GitHub: __GitHub
+'%websiteName% is not affliated with Mojang nor any of the software hosted here.': '__%websiteName% non è affigliato ne alla Mojang ne ai software messi a disposizione sul sito.'
+List: Lista
+All: Tutti
+Format: Formato
+'Example URL': '__URL di esempio'
+Info: Informazioni
+'This URL is just for listing the current options.': 'Questo URL serve solo ad elencare le opzioni correnti.'
+'Example usage': 'Esempio di utilizzo'
+'Real world usage for grabbing the list of files for %applicationName%.': 'Esempio d''utilizzo per ottenere la lista dei file relativi a %applicationName%.'
+File: __File
+'Real world usage for requesting information about %buildName%.': 'Esempio d''utilizzo per ottenere le informazioni relative a %buildName%.'

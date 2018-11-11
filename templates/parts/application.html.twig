@@ -15,11 +15,11 @@
                     {% endif %}
 
             {% if application.isAbandoned %}
-                <span class="tag is-danger">Abandoned</span>
+                <span class="tag is-danger">{% trans %}Abandoned{% endtrans %}</span>
             {% endif %}
 
             {% if application.isExternal %}
-                <span class="tag is-info">External</span>
+                <span class="tag is-info">{% trans %}External{% endtrans %}</span>
             {% endif %}
 
                 </span>

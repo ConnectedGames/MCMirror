@@ -5,12 +5,12 @@
         {% include 'home/parts/application.html.twig' with {'applications': applications, 'category': category} only %}
     {% endfor %}
     <div class="column is-4">
-        <p><span class="tag is-info">External</span> - Outgoing link to an external download location.</p>
+        <p><span class="tag is-info">{% trans %}External{% endtrans %}</span> - {% trans %}Outgoing link to an external download location.{% endtrans %}</p>
     </div>
     <div class="column is-4">
-        <p><span class="tag is-danger">Abandoned</span> - Project was abandoned by its developers.</p>
+        <p><span class="tag is-danger">{% trans %}Abandoned{% endtrans %}</span> - {% trans %}Project was abandoned by its developers.{% endtrans %}</p>
     </div>
     <div class="column is-4">
-        <p><span class="tag is-success"><i class="fas fa-star"></i></span> - Recommended.</p>
+        <p><span class="tag is-success"><i class="fas fa-star"></i></span> - {% trans %}Recommended{% endtrans %}</p>
     </div>
 {% endblock %}

@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
 <head>
-    <title>{{ env('WEBSITE_NAME') }} | {{ title }}</title>
+    <title>{{ env('WEBSITE_NAME')|trans }} | {{ title|trans }}</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:site_name" content="{{ env('WEBSITE_NAME') }}"/>
-    <meta property="og:title" content="{{ title }}"/>
+    <meta property="og:site_name" content="{{ env('WEBSITE_NAME')|trans }}"/>
+    <meta property="og:title" content="{{ title|trans }}"/>
     <meta property="og:url" content="{{ app.request.uri }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="{{ asset('dist/icon.png') }}"/>
@@ -19,9 +19,9 @@
          style="background-repeat: no-repeat;background-size: cover;background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url({{ asset('/dist/header.jpg') }});background-position: center;">
     <div class="hero-body">
         <div class="container has-text-centered">
-            <h1 class="title is-2">{{ env('WEBSITE_NAME') }}</h1>
-            <h2 class="subtitle">continuation of Yives Mirror</h2>
-            <h2 class="subtitle">Minecraft Server Software File Mirror</h2>
+            <h1 class="title is-2">{{ env('WEBSITE_NAME')|trans }}</h1>
+            <h2 class="subtitle">{% trans %}continuation of Yives Mirror{% endtrans %}</h2>
+            <h2 class="subtitle">{% trans %}Minecraft Server Software File Mirror{% endtrans %}</h2>
         </div>
     </div>
     <div class="hero-foot">
@@ -30,17 +30,17 @@
                 <div class="column is-6">
                     <nav class="tabs is-boxed">
                         <ul>
-                            <li><a href="{{ url('index') }}">Home</a></li>
-                            <li><a data-modal-id="#downloads-modal" class="open-modal">Downloads</a></li>
-                            <li><a href="{{ url('api_index') }}">APIs</a></li>
+                            <li><a href="{{ url('index') }}">{% trans %}Home{% endtrans %}</a></li>
+                            <li><a data-modal-id="#downloads-modal" class="open-modal">{% trans %}Downloads{% endtrans %}</a></li>
+                            <li><a href="{{ url('api_index') }}">{% trans %}APIs{% endtrans %}</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="column is-6">
                     <nav class="tabs is-boxed is-right">
                         <ul>
-                            <li><a href="{{ env('DISCORD_LINK') }}">Discord</a></li>
-                            <li><a href="{{ env('GITHUB_LINK') }}">GitHub</a></li>
+                            <li><a href="{{ env('DISCORD_LINK') }}">{% trans %}Discord{% endtrans %}</a></li>
+                            <li><a href="{{ env('GITHUB_LINK') }}">{% trans %}GitHub{% endtrans %}</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -59,8 +59,7 @@
 <footer class="footer">
     <div class="container">
         <div class="content has-text-centered">
-            <p><strong>{{ env('WEBSITE_NAME') }}</strong> is not affliated with Mojang nor any of the software hosted
-                here.</p>
+            <p>{% trans with {'%websiteName%': env('WEBSITE_NAME')|trans } %}%websiteName% is not affliated with Mojang nor any of the software hosted here.{% endtrans %}</p>
         </div>
     </div>
 </footer>
@@ -72,9 +71,9 @@
                 {% include 'parts/application.html.twig' with {'applications': applications, 'category': category} only %}
             {% endfor %}
             <div class="panel-block">
-                <p><span class="tag is-info">External</span> - Outgoing link to an external download location.</p>
-                <p><span class="tag is-danger">Abandoned</span> - Project was abandoned by its developers.</p>
-                <p><span class="tag is-success"><i class="fas fa-star"></i></span> - Recommended.</p>
+                <p><span class="tag is-info">{% trans %}External{% endtrans %}</span> - {% trans %}Outgoing link to an external download location.{% endtrans %}</p>
+                <p><span class="tag is-danger">{% trans %}Abandoned{% endtrans %}</span> - {% trans %}Project was abandoned by its developers.{% endtrans %}</p>
+                <p><span class="tag is-success"><i class="fas fa-star"></i></span> - {% trans %}Recommended{% endtrans %}</p>
             </div>
         </nav>
     </div>

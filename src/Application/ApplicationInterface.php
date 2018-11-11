@@ -22,4 +22,6 @@ interface ApplicationInterface
      * @return string|array
      */
     public function getVersionRegex();
+
+    public function getVersionGroupOverride(): array;
 }

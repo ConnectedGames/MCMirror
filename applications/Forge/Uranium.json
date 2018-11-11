@@ -1,0 +1,15 @@
+{
+    "recommended": false,
+    "abandoned": false,
+    "external": true,
+    "url": "https://Uraniummc.cc",
+    "name": "Uranium",
+    "category": "Other",
+    "officialLinks": {},
+    "versionRegex": [
+        "\/[a-zA-Z]+-([0-9.]+).*\/",
+        "\/.*(server).*\/"
+    ],
+    "versionGroupOverride": {
+    }
+}
