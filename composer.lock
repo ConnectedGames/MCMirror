@@ -1189,11 +1189,6 @@
                 "phpunit/phpunit": "^5.7"
             },
             "type": "library",
-            "extra": {
-                "patches_applied": {
-                    "Watch changes on files that are resources within the container": "https://patch-diff.githubusercontent.com/raw/php-pm/php-pm-httpkernel/pull/148.patch"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "PHPPM\\": ""
@@ -1203,7 +1198,12 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-09-16T11:15:39+00:00"
+            "time": "2018-09-16T11:15:39+00:00",
+            "extra": {
+                "patches_applied": {
+                    "Watch changes on files that are resources within the container": "https://patch-diff.githubusercontent.com/raw/php-pm/php-pm-httpkernel/pull/148.patch"
+                }
+            }
         },
         {
             "name": "php-pm/php-pm",
@@ -2673,16 +2673,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.1.8",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "68fbdcafe915db67adb13fddaec4532e684f6689"
+                "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/68fbdcafe915db67adb13fddaec4532e684f6689",
-                "reference": "68fbdcafe915db67adb13fddaec4532e684f6689",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
+                "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
                 "shasum": ""
             },
             "require": {
@@ -2691,7 +2691,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -2718,7 +2718,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-11T19:51:29+00:00"
+            "time": "2018-11-11T19:52:12+00:00"
         },
         {
             "name": "symfony/flex",
