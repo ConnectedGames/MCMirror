@@ -1,0 +1,40 @@
+'File Download': 'Pobierz plik'
+Filters: Filtry
+'Archive of %applicationName% Builds': 'Archiwa buildów %applicationName%'
+'Official Links': 'Oficjalne linki'
+Name: Nazwa
+Version: Wersja
+Size: Rozmiar
+Date: Data
+Download: Pobierz
+Abandoned: Porzucony
+External: Zewnętrzny
+'Outgoing link to an external download location.': 'Link do zewnętrznego źródła.'
+'Project was abandoned by its developers.': 'Ten projekt został porzucony przez deweloperów.'
+Recommended: Rekomendowany
+'continuation of Yives Mirror': 'kontynuacja Yives Mirror'
+'Minecraft Server Software File Mirror': 'Minecraft Server Software File Mirror'
+Home: Główna
+Downloads: Pobieranie
+APIs: API
+Discord: Discord
+GitHub: GitHub
+'%websiteName% is not affliated with Mojang nor any of the software hosted here.': '%websiteName% Nie jest powiązana Mojang oraz żadnym oprogramowanie hostowanym tutaj.'
+List: Lista
+All: Wszystko
+Format: Format
+'Example URL': 'Przykładowy URL'
+Info: Informacja
+'This URL is just for listing the current options.': 'Ten adres URL służy tylko do wyświetlenia aktualnych opcji'
+'Example usage': 'Przykładowe użycie'
+'Real world usage for grabbing the list of files for %applicationName%.': 'Rzeczywiste wykorzystanie dla przechwytywania listy plików %applicationName%.'
+File: Plik
+'Real world usage for requesting information about %buildName%.': 'Rzeczywiste wykorzystanie informacji o %buildName%.'
+'Vanilla': 'Vanilla'
+'Forge': 'Forge'
+'Proxies': 'Proxy'
+'Pocket Edition': 'Bedrock Edition'
+'Multi-Threaded': 'Wielowątkowe'
+'Mods': 'Modyfikacje'
+'Alternative': 'Alnernatywne'
+languageName: Polski
