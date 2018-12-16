@@ -1,8 +1,8 @@
 {
-  "recommended": false,
-  "abandoned": true,
-  "external": false,
-  "url": null,
+  "recommended": true,
+  "abandoned": false,
+  "external": true,
+  "url": "https://www.reforged.gg/",
   "name": "Pixelmon",
   "category": "Mods",
   "officialLinks": {}
