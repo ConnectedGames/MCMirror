@@ -1,0 +1,12 @@
+{
+  "recommended": true,
+  "abandoned": false,
+  "external": true,
+  "url": "https://github.com/PFCraft/Mohist",
+  "name": "Mohist",
+  "category": "Forge",
+  "officialLinks": {},
+
+  "versionGroupOverride": {
+  }
+}
