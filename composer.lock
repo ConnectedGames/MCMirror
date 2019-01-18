@@ -3961,16 +3961,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.1.1",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610"
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
                 "shasum": ""
             },
             "require": {
@@ -3986,7 +3986,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -4008,7 +4008,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-12-26T11:32:39+00:00"
+            "time": "2019-01-12T16:31:37+00:00"
         },
         {
             "name": "php-cs-fixer/diff",
@@ -4324,16 +4324,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.11.2",
+            "version": "v1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "24b19cccad0c658eca516b35b08668d123fabf92"
+                "reference": "08fabae78050d2fe71341d0edc3872bddf03482f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/24b19cccad0c658eca516b35b08668d123fabf92",
-                "reference": "24b19cccad0c658eca516b35b08668d123fabf92",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/08fabae78050d2fe71341d0edc3872bddf03482f",
+                "reference": "08fabae78050d2fe71341d0edc3872bddf03482f",
                 "shasum": ""
             },
             "require": {
@@ -4386,7 +4386,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2019-01-05T04:30:01+00:00"
+            "time": "2019-01-17T02:02:27+00:00"
         },
         {
             "name": "symfony/options-resolver",
