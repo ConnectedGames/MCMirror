@@ -5,5 +5,9 @@
   "url": "https://github.com/MatrixDevTeam/LavaBukkit",
   "name": "LavaBukkit",
   "category": "Forge",
-  "officialLinks": {}
+  "officialLinks": {
+    "Downloads": "https://github.com/MatrixDevTeam/LavaBukkit/releases",
+    "JavaDocs": "https://matrixdevteam.ml/javadocs/LavaBukkit",
+    "GitHub": "https://github.com/MatrixDevTeam/LavaBukkit"
+  }
 }
