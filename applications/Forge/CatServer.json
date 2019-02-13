@@ -1,8 +1,8 @@
 {
-  "recommended": false,
-  "abandoned": true,
+  "recommended": true,
+  "abandoned": false,
   "external": true,
-  "url": "https://github.com/Luohuayu/CatServer",
+  "url": "https://github.com/CatServer/CatServer",
   "name": "CatServer",
   "category": "Forge",
   "officialLinks": {},
