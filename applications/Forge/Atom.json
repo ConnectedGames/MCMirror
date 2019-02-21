@@ -1,6 +1,6 @@
 {
   "recommended": false,
-  "abandoned": false,
+  "abandoned": true,
   "external": true,
   "url": "https://gitlab.com/DivineCode/Atom/Atom",
   "name": "Atom",
