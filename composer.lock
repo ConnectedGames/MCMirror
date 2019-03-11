@@ -959,6 +959,11 @@
                 "symfony/framework-bundle": "^3.4|^4"
             },
             "type": "library",
+            "extra": {
+                "patches_applied": {
+                    "Fix Webpack Encore Bundle EntrypointLookup reset": "https://patch-diff.githubusercontent.com/raw/php-pm/php-pm-httpkernel/pull/153.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "PHPPM\\": ""
@@ -968,12 +973,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-01-21T12:32:22+00:00",
-            "extra": {
-                "patches_applied": {
-                    "Fix Webpack Encore Bundle EntrypointLookup reset": "https://patch-diff.githubusercontent.com/raw/php-pm/php-pm-httpkernel/pull/153.patch"
-                }
-            }
+            "time": "2019-01-21T12:32:22+00:00"
         },
         {
             "name": "php-pm/php-pm",
@@ -3262,16 +3262,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "8d76d6e4d0f9e8277a833c7c1b0af61982a25f3e"
+                "reference": "ac6f9fa8a49ddc0afb52e59808d15f98e9a84bcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/8d76d6e4d0f9e8277a833c7c1b0af61982a25f3e",
-                "reference": "8d76d6e4d0f9e8277a833c7c1b0af61982a25f3e",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/ac6f9fa8a49ddc0afb52e59808d15f98e9a84bcf",
+                "reference": "ac6f9fa8a49ddc0afb52e59808d15f98e9a84bcf",
                 "shasum": ""
             },
             "require": {
@@ -3281,7 +3281,7 @@
             },
             "conflict": {
                 "symfony/console": "<3.4",
-                "symfony/form": "<4.2.3",
+                "symfony/form": "<4.2.4",
                 "symfony/translation": "<4.2"
             },
             "require-dev": {
@@ -3290,7 +3290,7 @@
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
                 "symfony/finder": "~3.4|~4.0",
-                "symfony/form": "^4.2.3",
+                "symfony/form": "^4.2.4",
                 "symfony/http-foundation": "~3.4|~4.0",
                 "symfony/http-kernel": "~3.4|~4.0",
                 "symfony/polyfill-intl-icu": "~1.0",
@@ -3350,11 +3350,11 @@
             ],
             "description": "Symfony Twig Bridge",
             "homepage": "https://symfony.com",
-            "time": "2019-01-25T15:37:00+00:00"
+            "time": "2019-02-23T15:17:42+00:00"
         },
         {
             "name": "symfony/twig-bundle",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bundle.git",
