@@ -804,58 +804,6 @@
             "time": "2018-12-04T20:46:45+00:00"
         },
         {
-            "name": "http-interop/http-middleware",
-            "version": "0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/http-interop/http-middleware.git",
-                "reference": "b49e1f9f6c584e704317b563302e566b8ce11858"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/http-interop/http-middleware/zipball/b49e1f9f6c584e704317b563302e566b8ce11858",
-                "reference": "b49e1f9f6c584e704317b563302e566b8ce11858",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/http-message": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Interop\\Http\\Server\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP server-side middleware",
-            "keywords": [
-                "http",
-                "middleware",
-                "psr",
-                "psr-15",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "abandoned": "http-interop/http-server-middleware",
-            "time": "2017-09-18T15:27:03+00:00"
-        },
-        {
             "name": "monolog/monolog",
             "version": "1.24.0",
             "source": {
@@ -939,31 +887,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-pm/php-pm-httpkernel.git",
-                "reference": "6210935f35caa3c3eca248f335c902ab78467116"
+                "reference": "057f02eb5c5d0b8d65adcc4adb6fd442cf30dbbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-pm/php-pm-httpkernel/zipball/6210935f35caa3c3eca248f335c902ab78467116",
-                "reference": "6210935f35caa3c3eca248f335c902ab78467116",
+                "url": "https://api.github.com/repos/php-pm/php-pm-httpkernel/zipball/057f02eb5c5d0b8d65adcc4adb6fd442cf30dbbd",
+                "reference": "057f02eb5c5d0b8d65adcc4adb6fd442cf30dbbd",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/psr7": "^1.5",
-                "php-pm/php-pm": "^1.0.5",
-                "symfony/http-foundation": "^3.4|^4",
-                "symfony/http-kernel": "^3.4|^4"
+                "php-pm/php-pm": "^2.0",
+                "symfony/http-foundation": "^3.4|^4.0",
+                "symfony/http-kernel": "^3.4|^4.0"
             },
             "require-dev": {
                 "doctrine/annotations": "^1.6",
-                "phpunit/phpunit": "^5.7",
-                "symfony/framework-bundle": "^3.4|^4"
+                "phpunit/phpunit": "^7.0",
+                "symfony/framework-bundle": "^3.4|^4.0",
+                "symfony/yaml": "^3.4|^4.0"
             },
             "type": "library",
-            "extra": {
-                "patches_applied": {
-                    "Fix Webpack Encore Bundle EntrypointLookup reset": "https://patch-diff.githubusercontent.com/raw/php-pm/php-pm-httpkernel/pull/153.patch"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "PHPPM\\": ""
@@ -973,40 +917,44 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-01-21T12:32:22+00:00"
+            "time": "2019-03-24T17:08:53+00:00",
+            "extra": {
+                "patches_applied": {
+                    "Fix Webpack Encore Bundle EntrypointLookup reset": "https://patch-diff.githubusercontent.com/raw/php-pm/php-pm-httpkernel/pull/153.patch"
+                }
+            }
         },
         {
             "name": "php-pm/php-pm",
-            "version": "1.0.5",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-pm/php-pm.git",
-                "reference": "8818fd7b5aaa9e14d6476667543a7db914a6674e"
+                "reference": "4db650a94b51a26ce80dbec82e419ee913333431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-pm/php-pm/zipball/8818fd7b5aaa9e14d6476667543a7db914a6674e",
-                "reference": "8818fd7b5aaa9e14d6476667543a7db914a6674e",
+                "url": "https://api.github.com/repos/php-pm/php-pm/zipball/4db650a94b51a26ce80dbec82e419ee913333431",
+                "reference": "4db650a94b51a26ce80dbec82e419ee913333431",
                 "shasum": ""
             },
             "require": {
-                "http-interop/http-middleware": "^0.5",
                 "monolog/monolog": "^1.3",
-                "paragonie/random_compat": ">=2.0",
-                "php": ">=5.6.0",
-                "react/child-process": "^0.5",
+                "php": "^7.1",
+                "psr/http-server-handler": "^1.0",
+                "react/child-process": "^0.6",
                 "react/event-loop": "^1.0",
                 "react/http": "^0.8",
                 "react/socket": "^1.0",
                 "react/stream": "^1.0",
                 "ringcentral/psr7": "^1.2",
-                "symfony/console": "^2.6|^3.0|^4.0",
-                "symfony/debug": "^2.6|^3.0|^4.0",
-                "symfony/process": "^2.6|^3.0|^4.0"
+                "symfony/console": "^3.4|^4",
+                "symfony/debug": "^3.4|^4",
+                "symfony/process": "^3.4|^4"
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^7.0"
             },
             "suggest": {
                 "php-pm/httpkernel-adapter": "HttpKernel adapter for Symfony and Laravel frameworks"
@@ -1028,7 +976,7 @@
                 "MIT"
             ],
             "description": "PHP-PM is a process manager, supercharger and load balancer for PHP applications.",
-            "time": "2018-09-16T10:44:30+00:00"
+            "time": "2019-03-06T16:25:39+00:00"
         },
         {
             "name": "psr/cache",
@@ -1174,6 +1122,59 @@
                 "response"
             ],
             "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "psr/http-server-handler",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "time": "2018-10-30T16:46:14+00:00"
         },
         {
             "name": "psr/log",
@@ -1434,16 +1435,16 @@
         },
         {
             "name": "react/child-process",
-            "version": "v0.5.2",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/child-process.git",
-                "reference": "aae49d7f1340bafb695b9af3ce4421ea41a39620"
+                "reference": "6895afa583d51dc10a4b9e93cd3bce17b3b77ac3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/child-process/zipball/aae49d7f1340bafb695b9af3ce4421ea41a39620",
-                "reference": "aae49d7f1340bafb695b9af3ce4421ea41a39620",
+                "url": "https://api.github.com/repos/reactphp/child-process/zipball/6895afa583d51dc10a4b9e93cd3bce17b3b77ac3",
+                "reference": "6895afa583d51dc10a4b9e93cd3bce17b3b77ac3",
                 "shasum": ""
             },
             "require": {
@@ -1453,7 +1454,8 @@
                 "react/stream": "^1.0 || ^0.7.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35",
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35",
+                "react/socket": "^1.0",
                 "sebastian/environment": "^3.0 || ^2.0 || ^1.0"
             },
             "type": "library",
@@ -1472,25 +1474,25 @@
                 "process",
                 "reactphp"
             ],
-            "time": "2018-01-18T14:53:06+00:00"
+            "time": "2019-02-15T13:48:16+00:00"
         },
         {
             "name": "react/dns",
-            "version": "v0.4.16",
+            "version": "v0.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns.git",
-                "reference": "0a0bedfec72b38406413c6ea01e1c015bd0bf72b"
+                "reference": "0f30c6ceb71504d359d51132a97e1703051f1589"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/0a0bedfec72b38406413c6ea01e1c015bd0bf72b",
-                "reference": "0a0bedfec72b38406413c6ea01e1c015bd0bf72b",
+                "url": "https://api.github.com/repos/reactphp/dns/zipball/0f30c6ceb71504d359d51132a97e1703051f1589",
+                "reference": "0f30c6ceb71504d359d51132a97e1703051f1589",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "react/cache": "^0.5 || ^0.4 || ^0.3",
+                "react/cache": "^1.0 || ^0.6 || ^0.5 || ^0.4 || ^0.3",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
                 "react/promise": "^2.1 || ^1.2.1",
                 "react/promise-timer": "^1.2",
@@ -1498,7 +1500,7 @@
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
-                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -1517,31 +1519,32 @@
                 "dns-resolver",
                 "reactphp"
             ],
-            "time": "2018-11-11T11:21:13+00:00"
+            "time": "2019-04-01T07:31:55+00:00"
         },
         {
             "name": "react/event-loop",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3"
+                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
-                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
+                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8.35 || ^5.7 || ^6.4"
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35"
             },
             "suggest": {
                 "ext-event": "~1.0 for ExtEventLoop",
-                "ext-pcntl": "For signal handling support when using the StreamSelectLoop"
+                "ext-pcntl": "For signal handling support when using the StreamSelectLoop",
+                "ext-uv": "* for ExtUvLoop"
             },
             "type": "library",
             "autoload": {
@@ -1558,7 +1561,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2018-07-11T14:37:46+00:00"
+            "time": "2019-02-07T16:19:49+00:00"
         },
         {
             "name": "react/http",
@@ -1712,16 +1715,16 @@
         },
         {
             "name": "react/promise-timer",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise-timer.git",
-                "reference": "a11206938ca2394dc7bb368f5da25cd4533fa603"
+                "reference": "35fb910604fd86b00023fc5cda477c8074ad0abc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise-timer/zipball/a11206938ca2394dc7bb368f5da25cd4533fa603",
-                "reference": "a11206938ca2394dc7bb368f5da25cd4533fa603",
+                "url": "https://api.github.com/repos/reactphp/promise-timer/zipball/35fb910604fd86b00023fc5cda477c8074ad0abc",
+                "reference": "35fb910604fd86b00023fc5cda477c8074ad0abc",
                 "shasum": ""
             },
             "require": {
@@ -1738,7 +1741,7 @@
                     "React\\Promise\\Timer\\": "src/"
                 },
                 "files": [
-                    "src/functions.php"
+                    "src/functions_include.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1761,7 +1764,7 @@
                 "timeout",
                 "timer"
             ],
-            "time": "2018-06-13T16:45:37+00:00"
+            "time": "2019-03-27T18:10:32+00:00"
         },
         {
             "name": "react/socket",
@@ -2323,16 +2326,16 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.2.4",
+            "version": "v4.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "de73f48977b8eaf7ce22814d66e43a1662cc864f"
+                "reference": "43ce8ab34c734dcc8a4af576cb86711daab964c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/de73f48977b8eaf7ce22814d66e43a1662cc864f",
-                "reference": "de73f48977b8eaf7ce22814d66e43a1662cc864f",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/43ce8ab34c734dcc8a4af576cb86711daab964c5",
+                "reference": "43ce8ab34c734dcc8a4af576cb86711daab964c5",
                 "shasum": ""
             },
             "require": {
@@ -2375,7 +2378,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-03T18:11:24+00:00"
+            "time": "2019-03-10T17:09:50+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -2985,16 +2988,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.2.4",
+            "version": "v4.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "6c05edb11fbeff9e2b324b4270ecb17911a8b7ad"
+                "reference": "1e6cbb41dadcaf29e0db034d6ad0d039a9df06e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/6c05edb11fbeff9e2b324b4270ecb17911a8b7ad",
-                "reference": "6c05edb11fbeff9e2b324b4270ecb17911a8b7ad",
+                "url": "https://api.github.com/repos/symfony/process/zipball/1e6cbb41dadcaf29e0db034d6ad0d039a9df06e6",
+                "reference": "1e6cbb41dadcaf29e0db034d6ad0d039a9df06e6",
                 "shasum": ""
             },
             "require": {
@@ -3030,7 +3033,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-24T22:05:03+00:00"
+            "time": "2019-03-10T20:07:02+00:00"
         },
         {
             "name": "symfony/profiler-pack",
@@ -4173,12 +4176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0698207bf8a9bed212fdde2d8c7cdc77085660c4"
+                "reference": "bd4dca680a7af3fb99f07dd9c0511f3fb8d066af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0698207bf8a9bed212fdde2d8c7cdc77085660c4",
-                "reference": "0698207bf8a9bed212fdde2d8c7cdc77085660c4",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/bd4dca680a7af3fb99f07dd9c0511f3fb8d066af",
+                "reference": "bd4dca680a7af3fb99f07dd9c0511f3fb8d066af",
                 "shasum": ""
             },
             "conflict": {
@@ -4215,7 +4218,7 @@
                 "dompdf/dompdf": ">=0.6,<0.6.2",
                 "drupal/core": ">=7,<7.64|>=8,<8.5.13|>=8.6,<8.6.12",
                 "drupal/drupal": ">=7,<7.64|>=8,<8.5.13|>=8.6,<8.6.12",
-                "erusev/parsedown": "<1.7",
+                "erusev/parsedown": "<1.7.2",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.13.1|>=6,<6.7.9.1|>=6.8,<6.13.5.1|>=7,<7.2.4.1|>=7.3,<7.3.2.1",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.6|>=5.4,<5.4.12.3|>=2011,<2017.12.4.3|>=2018.6,<2018.6.1.4|>=2018.9,<2018.9.1.3",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
@@ -4311,7 +4314,7 @@
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "tecnickcom/tcpdf": "<6.2.22",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
                 "theonedemon/phpwhois": "<=4.2.5",
                 "titon/framework": ">=0,<9.9.99",
                 "truckersmp/phpwhois": "<=4.3.1",
@@ -4370,7 +4373,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-03-28T22:30:08+00:00"
+            "time": "2019-04-07T10:25:46+00:00"
         },
         {
             "name": "symfony/dotenv",
