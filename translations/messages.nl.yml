@@ -1,0 +1,41 @@
+'File Download': 'Download Bestand'
+Filters: Filters
+'Archive of %applicationName% Builds': 'Archief van %applicationName% Builds'
+'Official Links': 'Officiele Links'
+Name: Naam
+Version: Versie
+Size: Grootte
+Date: Datum
+Download: Download
+Abandoned: Verwaarloosd
+External: Extern
+'Outgoing link to an external download location.': 'Uigaande link naar een externe download locatie.'
+'Project was abandoned by its developers.': 'Project is verwaarloosd door de ontwikkelaars.'
+Recommended: Aanbevolen
+'continuation of Yives Mirror': 'Voortzetting van Yives Mirror'
+'Minecraft Server Software File Mirror': 'Minecraft Server Software Bestand Mirror'
+Home: Home
+Downloads: Downloads
+APIs: APIs
+Discord: Discord
+GitHub: GitHub
+'%websiteName% is not affliated with Mojang nor any of the software hosted here.': '%websiteName% is niet verbonden met Mojang noch met de software die hier wordt gehost.'
+List: Lijst
+All: Alle
+Format: Formaat
+'Example URL': 'Voorbeeld URL'
+Info: Info
+'This URL is just for listing the current options.': 'Deze link is alleen voor het weergeven van de huidige opties.'
+'Example usage': 'Voorbeeld gebruik:'
+'Real world usage for grabbing the list of files for %applicationName%.': 'Realistisch gebruik voor het ophalen van een lijst met bestanden voor %applicationName%.'
+File: Bestand
+'Real world usage for requesting information about %buildName%.': 'Realistisch gebruik voor het aanvragen van informatie over %buildName%.'
+'Vanilla': 'Vanilla'
+'Forge': 'Forge'
+'Proxies': 'Proxies'
+'Pocket Edition': 'Pocket Edition'
+'Multi-Threaded': 'Multi-Threaded'
+'Mods': 'Mods'
+'Alternative': 'Alternatief'
+Patreon: Patreon
+languageName: Nederlands
