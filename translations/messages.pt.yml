@@ -1,0 +1,41 @@
+'File Download': 'Download do Arquivo'
+Filters: Filtros
+'Archive of %applicationName% Builds': 'Archive of %applicationName% Builds'
+'Official Links': 'Links oficiais'
+Name: Name
+Version: Versão
+Size: Tamanho
+Date: Data
+Download: Baixar  
+Abandoned: Abandonado
+External: Externo
+'Outgoing link to an external download location.': 'Link de saída para um local de download externo.'
+'Project was abandoned by its developers.': 'Projeto foi abandonado por seus desenvolvedores.'
+Recommended: Recomendado
+'continuation of Yives Mirror': 'continuação do Yives Mirror'
+'Minecraft Server Software File Mirror': 'Minecraft Servidor - Arquivos e programas'
+Home: Inicio
+Downloads: Transferências
+APIs: APIs
+Discord: Discord
+GitHub: GitHub
+'%websiteName% is not affliated with Mojang nor any of the software hosted here.': '%websiteName% não é afiliado à Mojang nem a nenhum dos softwares hospedados aqui.'
+List: Lista
+All: Todos
+Format: Formato
+'Example URL': 'URL de exemplo'
+Info: Info
+'This URL is just for listing the current options.': 'Este URL é apenas para listar as opções atuais.'
+'Example usage': 'Exemplo de uso'
+'Real world usage for grabbing the list of files for %applicationName%.': 'Exemplo de uso para obter a lista de arquivos para %applicationName%.'
+File: File
+'Real world usage for requesting information about %buildName%.': 'Exemplo de uso para solicitar informações sobre %buildName%.'
+'Vanilla': 'Vanilla'
+'Forge': 'Forge'
+'Proxies': 'Proxies'
+'Pocket Edition': 'Pocket Edition'
+'Multi-Threaded': 'Multi-Threaded'
+'Mods': 'Mods'
+'Alternative': 'Alternativo'
+Patreon: Patreon
+languageName: Português
