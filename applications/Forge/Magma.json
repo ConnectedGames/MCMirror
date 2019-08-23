@@ -1,0 +1,12 @@
+{
+  "recommended": false,
+  "abandoned": false,
+  "external": true,
+  "url": "https://github.com/magmafoundation/Magma",
+  "name": "Magma",
+  "category": "Forge",
+  "officialLinks": {
+    "Downloads": "https://github.com/magmafoundation/Magma/releases",
+    "Discord": "https://discord.gg/6rkqngA"
+  }
+}
