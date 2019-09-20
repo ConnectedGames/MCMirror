@@ -2,12 +2,12 @@
   "recommended": false,
   "abandoned": false,
   "external": true,
-  "url": "https://gitlab.com/DivineCode/Atom/Atom",
-  "name": "Atom",
+  "url": "https://GitHub.com/josephworks/AtomMC",
+  "name": "AtomMC",
   "category": "Forge",
   "officialLinks": {
-    "GitLab": "https://gitlab.com/DivineCode/Atom/Atom",
-    "Downloads": "https://gitlab.com/Divinecode/Atom/Atom/pipelines",
-    "Discord": "https://discord.gg/AZKFBzd"
+    "GitHub": "https://github.com/josephworks/AtomMC",
+    "Downloads": "http://ci.openprocesses.ml/job/jospehworks/job/AtomMC/",
+    "Discord": "https://discord.gg/mwF5UXn"
     }
 }
