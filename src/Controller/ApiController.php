@@ -69,9 +69,7 @@ class ApiController extends AbstractController
         $response = null;
 
         if ($option === 'all') {
-            $response = array_map(function (ApplicationInterface $application) {
-                return $application->getName();
-            }, $this->applicationService->getApplications());
+            $response = $this->getAllApplications();           
         } elseif ($this->applicationService->getApplication($option) !== null) {
             $response = $this->getForApplication($option);
         }
@@ -110,6 +108,13 @@ class ApiController extends AbstractController
         $this->downloadCounter->increaseCounter($application, $build);
 
         return new JsonResponse($build->getApiAnswer());
+    }
+
+    private function getAllApplications()
+    {
+        return array_map(function (ApplicationInterface $application) {
+            return $application->getName();
+        }, $this->applicationService->getApplications());
     }
 
     private function getForApplication(string $applicationName)

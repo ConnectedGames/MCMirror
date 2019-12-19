@@ -6,6 +6,7 @@ use App\Application\ApplicationInterface;
 use App\Structs\Build;
 use App\Structs\BuildInterface;
 use App\Structs\LatestBuild;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\Routing\RouterInterface;
@@ -132,6 +133,12 @@ class BuildsService
         $applicationPath = $this->getPathForApplication($application);
 
         $finder = new Finder();
+        $filesystem = new Filesystem();
+
+        if ($filesystem->exists($applicationPath) === false)  {
+            return [];
+        }
+
         $finder->files()->in($applicationPath);
 
         $builds = [];
