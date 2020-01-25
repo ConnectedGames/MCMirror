@@ -1,0 +1,41 @@
+'File Download': 'ファイルダウンロード'
+Filters: フィルター
+'Archive of %applicationName% Builds': '%applicationName% ビルドのアーカイブ'
+'Official Links': '公式リンク'
+Name: 名前
+Version: バージョン
+Size: サイズ
+Date: 日付
+Download: ダウンロード
+Abandoned: 放棄
+External: 外部
+'Outgoing link to an external download location.': '外部ダウンロード場所へのリンク'
+'Project was abandoned by its developers.': 'プロジェクトは開発者によって放棄されました。'
+Recommended: 推奨
+'continuation of Yives Mirror': 'Yives Mirrorの後継'
+'Minecraft Server Software File Mirror': 'Minecraftサーバーソフトウェアのファイルミラー'
+Home: ホーム
+Downloads: ダウンロード
+APIs: API
+Discord: Discord
+GitHub: GitHub
+'%websiteName% is not affliated with Mojang nor any of the software hosted here.': '%websiteName% はMojangやここでホストされているソフトウェアのいずれとも関係はありません。'
+List: 一覧
+All: 全て
+Format: フォーマット
+'Example URL': 'URLの例'
+Info: 情報
+'This URL is just for listing the current options.': 'このURLは現在のオプションをリストにするためのものです。'
+'Example usage': '使い方の例'
+'Real world usage for grabbing the list of files for %applicationName%.': '%applicationName% のファイルリストを取得するための使用法。'
+File: ファイル
+'Real world usage for requesting information about %buildName%.': '%buildName% に関する情報を要求するための使用法。'
+'Vanilla': 'バニラ'
+'Forge': 'Forge'
+'Proxies': 'プロキシ'
+'Pocket Edition': 'Pocket Edition'
+'Multi-Threaded': 'マルチスレッド'
+'Mods': 'Mod'
+'Alternative': '代替案'
+Patreon: Patreon
+languageName: Japanese
