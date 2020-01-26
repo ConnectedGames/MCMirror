@@ -1,0 +1,12 @@
+{
+  "recommended": false,
+  "abandoned": false,
+  "external": true,
+  "url": "https://github.com/LavaPowered/Lava",
+  "name": "Lava",
+  "category": "Forge",
+  "officialLinks": {
+    "Discord": "https://discord.gg/QuEhEXY",
+    "GitHub": "https://github.com/LavaPowered/Lava"
+  }
+}
