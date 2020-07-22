@@ -1,0 +1,13 @@
+{
+  "recommended": false,
+  "abandoned": false,
+  "external": true,
+  "name": "Arclight",
+  "category": "Forge",
+  "officialLinks": {
+    "Downloads": "https://github.com/IzzelAliz/Arclight/releases",
+    "CI (AppVeyor)": "https://ci.appveyor.com/project/IzzelAliz/arclight/build/artifacts",
+    "Source (GitHub)": "https://github.com/IzzelAliz/Arclight",
+    "Discord": "https://discord.gg/ZvTY5SC"
+  }
+}
